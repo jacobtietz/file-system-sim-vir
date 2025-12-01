@@ -7,7 +7,7 @@
 #include <memory>
 
 int main() {
-    auto fs = std::make_shared<SimpleFS>(nullptr); // virtual disk not needed for in-memory FS
+    auto fs = std::make_shared<SimpleFS>(nullptr);
 
     std::cout << "In-memory VFS initialized. Type 'help' for commands.\n";
 
