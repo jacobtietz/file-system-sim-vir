@@ -1,4 +1,4 @@
-// g++ -std=c++17 main.cpp simple_fs.h virtual_disk.h mount_manager.h -o vfs_test
+// g++ -std=c++17 main.cpp -o vfs_test
 // ./vfs_test
 
 #include "simple_fs.h"
