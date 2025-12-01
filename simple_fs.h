@@ -10,10 +10,9 @@
 struct Node {
     bool is_dir;
     std::string name;
-    std::string content;                 // Only used if is_dir == false
+    std::string content;
     std::map<std::string, Node> children;
 
-    // Default constructor (needed for std::map)
     Node() : is_dir(false), name("") {}
 
     Node(std::string n, bool dir) : name(n), is_dir(dir) {}
