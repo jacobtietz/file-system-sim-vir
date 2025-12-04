@@ -28,7 +28,7 @@ public:
     Node* traverse(const std::string& path) {
         if (path.empty() || path[0] != '/')
             throw std::runtime_error("Path must be absolute");
-
+        // Core function that navigates the filesystem tree to find any node.
         Node* current = &root;
         if (path == "/") return current;
 
