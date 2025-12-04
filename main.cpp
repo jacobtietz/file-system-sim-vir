@@ -8,7 +8,8 @@
 
 int main() {
     auto fs = std::make_shared<SimpleFS>(nullptr);
-
+    // Creates the in-memory virtual filesystem using a smart pointer.
+    // Using shared_ptr ensures automatic memory management and prevents dangling pointers.
     std::cout << "In-memory VFS initialized. Type 'help' for commands.\n";
 
     std::string line;
